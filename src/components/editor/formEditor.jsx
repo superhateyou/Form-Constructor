@@ -13,11 +13,29 @@ export const FormEditor = ({arr}) => {
         setStatement({...statement, [e.target.name] : e.target.checked})
     }
 
+    const multiInputHandler = (textState, e) => {
+        const stateName = e.target.type + '_' + e.target.alt
+        setStatement({...statement, [stateName]: textState })
+    }
+
+    const multiCheckHandler = (checkState, e) => {
+        const stateName = e.target.type + '_' + e.target.alt
+        setStatement({...statement, [stateName]: checkState })
+    }
+
     console.log(statement)
 
     return (    
         <div className={styles.editorBox}>  
-           {arr.map((el, i) => <FieldTemplate key={i.toString()} data={el} changeHandler={changeHandler} checkedHandler={checkedHandler}/>)}
+           {arr.map((el, i) => 
+           <FieldTemplate 
+                key={i.toString()} 
+                data={el} 
+                changeHandler={changeHandler} 
+                checkedHandler={checkedHandler} 
+                multiInputHandler={multiInputHandler}
+                multiCheckHandler={multiCheckHandler}
+           />)}
         </div>
     )
 }

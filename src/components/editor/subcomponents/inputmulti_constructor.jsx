@@ -1,13 +1,17 @@
 import { useState } from "react"
 
-export const MultiInputConstructor = ({data, changeHandler}) => {
+export const MultiInputConstructor = ({data, multiInputHandler}) => {
     let tempArr = []
-    const addButton = data.name + '+' + data.type + '_addButton'
 
     const [lengthArr, setLengthArr] = useState(data.quantity)
-
+    const [localState, setLocalState] = useState('')
     const addField = () => {
         setLengthArr(lengthArr + 1)
+    }
+
+    const localHandler = (e) => {
+        setLocalState({...localState, [e.target.name] : e.target.value})
+        multiInputHandler(localState, e)
     }
 
     const renderField = () => {
@@ -15,7 +19,14 @@ export const MultiInputConstructor = ({data, changeHandler}) => {
             for (let i = 0; i < lengthArr; i++){
                 let currentName = data.name + '_' + i
                 let currentKey = data.name + '_' + i + '_' + data.type
-                tempArr.push(<input name={currentName} placeholder={data.placeholder} type='text' key={currentKey} onChange={e => {changeHandler(e)}}/>)
+                tempArr.push(
+                    <input 
+                        alt={data.name} 
+                        name={currentName} 
+                        placeholder={data.placeholder} 
+                        type='text' key={currentKey} 
+                        onChange={e => {localHandler(e)}}
+                    />)
             }
         }
         return tempArr
@@ -24,7 +35,11 @@ export const MultiInputConstructor = ({data, changeHandler}) => {
     return (
         <div>
             {renderField()}
-            <button key={addButton} type='button' onClick={addField}>Добавить поле ввода</button>
+            <button key={data.name + '+' + data.type + '_addButton'} 
+                type='button' 
+                onClick={addField}>
+                Добавить поле ввода
+            </button>
         </div>
     )
 }

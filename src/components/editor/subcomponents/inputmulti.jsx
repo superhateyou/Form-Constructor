@@ -1,7 +1,7 @@
 import { MultiInputConstructor } from "./inputmulti_constructor"
 
-export const multiInput = ({data, changeHandler}) => {
+export const multiInput = ({data, multiInputHandler}) => {
     return (
-        <MultiInputConstructor data={data} changeHandler={changeHandler} />
+        <MultiInputConstructor data={data} multiInputHandler={multiInputHandler}/>
     )
 }

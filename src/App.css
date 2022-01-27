@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
 }
 
 .App-logo {
@@ -33,13 +32,13 @@
 }
 
 .app-wrapper {
-  background-color: lightskyblue;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 40px 40px;
+  background-color: lightskyblue;
+  height: 100%;
 }
 
 input {

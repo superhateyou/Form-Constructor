@@ -35,26 +35,32 @@ import { FormEditor } from './components/editor/formEditor';
 
 let arr = [
   { 
-      name : "multi_input_text",
+      name : "Blog",
       placeholder: "Введите текст...",
       type: "multiInput",
       quantity: 3
   },
+  // { 
+  //     name : "Comments",
+  //     placeholder: "Введите текст...",
+  //     type: "multiInput",
+  //     quantity: 1
+  // },
   // { //не готов
   //     name : "input_multiple",
   //     placeholder: "Введите текст...",
   //     type: "text"
   // },
-  // { //готов
-  //     name : "input_number",
-  //     placeholder: "Введите число...",
-  //     type: "numberInput"
-  // },
-  // { //готов
-  //     name : "input_pass",
-  //     placeholder: "Введите пароль...",
-  //     type: "passwordInput",
-  // },
+  { //готов
+      name : "input_number",
+      placeholder: "Введите число...",
+      type: "numberInput"
+  },
+  { //готов
+      name : "input_pass",
+      placeholder: "Введите пароль...",
+      type: "passwordInput",
+  },
   // { //готов
   //   name : "input_textarea",
   //   placeholder: "Введите текст...",
@@ -64,6 +70,11 @@ let arr = [
   //     name : "input_checkbox",
   //     type : "checkInput"
   // },
+  { //готов
+      name : "input_checkbox",
+      type : "multiCheck",
+      quantity : 5
+  },
   // {
   //     name : "input_multicheck",
   //     type : "checkbox"
@@ -72,8 +83,10 @@ let arr = [
 
 function App() {
   return (
-    <div className="app-wrapper">
-      <FormEditor arr={arr} />
+    <div className='App'>
+      <div className="app-wrapper">
+        <FormEditor arr={arr} />
+      </div>
     </div>
   );
 }

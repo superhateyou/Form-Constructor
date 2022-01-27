@@ -4,6 +4,7 @@ import { FieldTemplate } from "./fieldtemplate"
 
 export const FormEditor = ({arr}) => {
     const [statement, setStatement] = useState('')
+
     const changeHandler = (e) => {
         setStatement({...statement, [e.target.name] : e.target.value})
     }
@@ -16,7 +17,7 @@ export const FormEditor = ({arr}) => {
 
     return (    
         <div className={styles.editorBox}>
-           {arr.map((el, i) => <FieldTemplate key={i.toString()} data={el} changeHandler={changeHandler}/>)}
+           {arr.map((el, i) => <FieldTemplate key={i.toString()} data={el} changeHandler={changeHandler} checkedHandler={checkedHandler}/>)}
         </div>
     )
 }

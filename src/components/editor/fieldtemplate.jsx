@@ -12,13 +12,12 @@ const keyHolder = {
     "checkInput" : checkInput
 }
 
-export const FieldTemplate = ({data, changeHandler}) => {
-    // return <input name={data.name} placeholder={data.placeholder} type="text" key={data.key} onChange={e => {changeHandler(e)}}/>
+export const FieldTemplate = ({data, changeHandler, checkedHandler}) => {
     for (const key in keyHolder) {
         if (key === data.type){
             const ComponentName = keyHolder[key]
             return (
-                <ComponentName data={data} changeHandler={changeHandler}/>
+                <ComponentName data={data} changeHandler={changeHandler} checkedHandler={checkedHandler}/>
             )
         }
     }

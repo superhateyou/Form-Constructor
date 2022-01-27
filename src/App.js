@@ -34,12 +34,39 @@ import { FormEditor } from './components/editor/formEditor';
 // ]
 
 let arr = [
-  { 
-      name : "Blog",
-      placeholder: "Введите текст...",
-      type: "multiInput",
-      quantity: 3
-  },
+  {
+    name : "Login",
+    placeholder: "Введите логин...",
+    type: "textInput"
+},
+{ 
+    name : "Blog",
+    placeholder: "Введите текст...",
+    type: "multiInput",
+    quantity: 3
+},
+{ 
+    name : "Quiz",
+    type: "multiCheck",
+    quantity: 3
+},
+{ 
+    name : "Blog",
+    placeholder: "Введите текст...",
+    type: "multiInput",
+    quantity: 3
+},
+{
+    name: "Password",
+    placeholder: "Введите пароль",
+    type: "passwordInput"
+}
+  // { 
+  //     name : "Blog",
+  //     placeholder: "Введите текст...",
+  //     type: "multiInput",
+  //     quantity: 3
+  // },
   // { 
   //     name : "Comments",
   //     placeholder: "Введите текст...",
@@ -51,16 +78,16 @@ let arr = [
   //     placeholder: "Введите текст...",
   //     type: "text"
   // },
-  { //готов
-      name : "input_number",
-      placeholder: "Введите число...",
-      type: "numberInput"
-  },
-  { //готов
-      name : "input_pass",
-      placeholder: "Введите пароль...",
-      type: "passwordInput",
-  },
+  // { //готов
+  //     name : "input_number",
+  //     placeholder: "Введите число...",
+  //     type: "numberInput"
+  // },
+  // { //готов
+  //     name : "input_pass",
+  //     placeholder: "Введите пароль...",
+  //     type: "passwordInput",
+  // },
   // { //готов
   //   name : "input_textarea",
   //   placeholder: "Введите текст...",
@@ -70,11 +97,11 @@ let arr = [
   //     name : "input_checkbox",
   //     type : "checkInput"
   // },
-  { //готов
-      name : "input_checkbox",
-      type : "multiCheck",
-      quantity : 5
-  },
+  // { //готов
+  //     name : "input_checkbox",
+  //     type : "multiCheck",
+  //     quantity : 5
+  // },
   // {
   //     name : "input_multicheck",
   //     type : "checkbox"

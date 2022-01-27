@@ -34,39 +34,40 @@ import { FormEditor } from './components/editor/formEditor';
 // ]
 
 let arr = [
-  { //готов
-      name : "input_text",
+  { 
+      name : "multi_input_text",
       placeholder: "Введите текст...",
-      type: "textInput"
+      type: "multiInput",
+      quantity: 3
   },
-  { //не готов
-      name : "input_multiple",
-      placeholder: "Введите текст...",
-      type: "text"
-  },
-  { //готов
-      name : "input_number",
-      placeholder: "Введите число...",
-      type: "numberInput"
-  },
-  { //готов
-      name : "input_pass",
-      placeholder: "Введите пароль...",
-      type: "passwordInput",
-  },
-  {
-    name : "input_textarea",
-    placeholder: "Введите текст...",
-    type : "areaInput"
-  },
-  {
-      name : "input_checkbox",
-      type : "checkInput"
-  },
-  {
-      name : "input_multicheck",
-      type : "checkbox"
-  }
+  // { //не готов
+  //     name : "input_multiple",
+  //     placeholder: "Введите текст...",
+  //     type: "text"
+  // },
+  // { //готов
+  //     name : "input_number",
+  //     placeholder: "Введите число...",
+  //     type: "numberInput"
+  // },
+  // { //готов
+  //     name : "input_pass",
+  //     placeholder: "Введите пароль...",
+  //     type: "passwordInput",
+  // },
+  // { //готов
+  //   name : "input_textarea",
+  //   placeholder: "Введите текст...",
+  //   type : "areaInput"
+  // },
+  // { //готов
+  //     name : "input_checkbox",
+  //     type : "checkInput"
+  // },
+  // {
+  //     name : "input_multicheck",
+  //     type : "checkbox"
+  // }
 ]
 
 function App() {

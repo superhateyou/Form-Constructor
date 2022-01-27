@@ -1,5 +1,6 @@
 import { checkInput } from './subcomponents/checkbox'
 import { textInput } from './subcomponents/input'
+import { multiInput } from './subcomponents/inputmulti'
 import { numberInput } from './subcomponents/number'
 import { passwordInput } from './subcomponents/password'
 import { areaInput } from './subcomponents/textarea'
@@ -9,7 +10,8 @@ const keyHolder = {
     "numberInput" : numberInput,
     "passwordInput" : passwordInput,
     "areaInput" : areaInput,
-    "checkInput" : checkInput
+    "checkInput" : checkInput,
+    "multiInput" : multiInput
 }
 
 export const FieldTemplate = ({data, changeHandler, checkedHandler}) => {

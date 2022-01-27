@@ -16,7 +16,7 @@ export const FormEditor = ({arr}) => {
     console.log(statement)
 
     return (    
-        <div className={styles.editorBox}>
+        <div className={styles.editorBox}>  
            {arr.map((el, i) => <FieldTemplate key={i.toString()} data={el} changeHandler={changeHandler} checkedHandler={checkedHandler}/>)}
         </div>
     )

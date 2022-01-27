@@ -13,7 +13,7 @@
 -_multiCheck_ - набор чекбоксов;
 
 ##### Пример использования:
-
+![IMG](https://sun9-57.userapi.com/impg/ZLzeKIpY7qafSqobCSBuhtEmpjhBIiLVpoNZjQ/tBQLq39Gnow.jpg?size=425x908&quality=96&sign=6cc570805743b9faf96b7fc3460f089a&type=album)
 ```const randomProps = [
     {
         name: "Login",
@@ -44,4 +44,3 @@
     }
 ]```
 
-![IMG](https://sun9-57.userapi.com/impg/ZLzeKIpY7qafSqobCSBuhtEmpjhBIiLVpoNZjQ/tBQLq39Gnow.jpg?size=425x908&quality=96&sign=6cc570805743b9faf96b7fc3460f089a&type=album)

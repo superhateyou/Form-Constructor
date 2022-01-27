@@ -8,6 +8,10 @@ export const FormEditor = ({arr}) => {
         setStatement({...statement, [e.target.name] : e.target.value})
     }
 
+    const checkedHandler = (e) => {
+        setStatement({...statement, [e.target.name] : e.target.checked})
+    }
+
     console.log(statement)
 
     return (    

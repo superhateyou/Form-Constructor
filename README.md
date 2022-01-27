@@ -1,6 +1,6 @@
 # Form constructor
 
-В тэг '''<FormEditor />''' передаётся массив объектов, каждый из которов является полем.
+В тэг ```<FormEditor />``` передаётся массив объектов, каждый из которов является полем.
 
 ### Типы полей:
 
@@ -14,7 +14,7 @@
 
 ##### Пример использования:
 
-'''let randomProps = [
+```const randomProps = [
     {
         name: "Login",
         placeholder: "Введите логин...",
@@ -42,6 +42,6 @@
         placeholder: "Введите пароль",
         type: "passwordInput"
     }
-]'''
+]```
 
-!(https://sun9-57.userapi.com/impg/ZLzeKIpY7qafSqobCSBuhtEmpjhBIiLVpoNZjQ/tBQLq39Gnow.jpg?size=425x908&quality=96&sign=6cc570805743b9faf96b7fc3460f089a&type=album)
+![IMG](https://sun9-57.userapi.com/impg/ZLzeKIpY7qafSqobCSBuhtEmpjhBIiLVpoNZjQ/tBQLq39Gnow.jpg?size=425x908&quality=96&sign=6cc570805743b9faf96b7fc3460f089a&type=album)

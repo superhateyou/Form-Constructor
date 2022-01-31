@@ -1,38 +1,6 @@
 import './App.css';
 import { FormEditor } from './components/editor/formEditor';
 
-
-// let arr = [
-//   {
-//       name : "input_text",
-//       placeholder: "Введите текст...",
-//       type: "text"
-//   },
-//   {
-//       name : "input_multiple",
-//       placeholder: "Введите текст...",
-//       type: "text"
-//   },
-//   {
-//       name : "input_number",
-//       placeholder: "Введите число...",
-//       type: "number"
-//   },
-//   {
-//       name : "input_pass",
-//       placeholder: "Введите пароль...",
-//       type: "password",
-//   },
-//   {
-//       name : "input_checkbox",
-//       type : "checkbox"
-//   },
-//   {
-//       name : "input_multicheck",
-//       type : "checkbox"
-//   }
-// ]
-
 let arr = [
   {
     name : "Login",
@@ -125,3 +93,4 @@ function App() {
 }
 
 export default App;
+

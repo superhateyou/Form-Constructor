@@ -39,6 +39,11 @@ let arr = [
     placeholder: "Введите логин...",
     type: "textInput"
 },
+{
+    name: "Radio",
+    type: "radioInput",
+    value: "Pizza?"
+},
 { 
     name : "Blog",
     placeholder: "Введите текст...",

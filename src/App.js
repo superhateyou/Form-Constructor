@@ -44,6 +44,11 @@ let arr = [
     type: "radioInput",
     value: "Pizza?"
 },
+{
+    name: "Selection",
+    type: "selectInput",
+    options : ["blue", "red"]
+},
 { 
     name : "Blog",
     placeholder: "Введите текст...",

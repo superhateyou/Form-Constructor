@@ -6,6 +6,7 @@ import { numberInput } from './subcomponents/number'
 import { passwordInput } from './subcomponents/password'
 import { areaInput } from './subcomponents/textarea'
 import { radioInput } from './subcomponents/radio'
+import { selectInput } from './subcomponents/select'
 
 const keyHolder = {
     "textInput" : textInput,
@@ -15,7 +16,8 @@ const keyHolder = {
     "checkInput" : checkInput,
     "multiInput" : multiInput,
     "multiCheck" : multiCheck,
-    "radioInput" : radioInput
+    "radioInput" : radioInput,
+    "selectInput" : selectInput
 }
 
 export const FieldTemplate = ({data, changeHandler, checkedHandler, multiInputHandler, multiCheckHandler}) => {

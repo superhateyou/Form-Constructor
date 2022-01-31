@@ -67,9 +67,15 @@ textarea {
   }
 
   select {
+    margin: 25px 0;
     width: 420px;
     padding: 11px;
     border-radius: 45px; 
     outline: none;
     border: none;
+  }
+
+  .multiSelect {
+      border-radius: 15px;
+      overflow: hidden;
   }

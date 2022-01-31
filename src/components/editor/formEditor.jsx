@@ -23,6 +23,11 @@ export const FormEditor = ({arr}) => {
         setStatement({...statement, [stateName]: checkState })
     }
 
+    const multiSelectHandler = (selected, e) => {
+        const stateName = e.target.name
+        setStatement({...statement, [stateName]: selected })
+    }
+
     console.log(statement)
 
     return (    
@@ -35,6 +40,7 @@ export const FormEditor = ({arr}) => {
                 checkedHandler={checkedHandler} 
                 multiInputHandler={multiInputHandler}
                 multiCheckHandler={multiCheckHandler}
+                multiSelectHandler={multiSelectHandler}
            />)}
         </div>
     )

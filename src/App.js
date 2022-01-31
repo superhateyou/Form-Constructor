@@ -47,7 +47,12 @@ let arr = [
 {
     name: "Selection",
     type: "selectInput",
-    options : ["blue", "red"]
+    options : ["blue", "red", "yellow", "green"],
+},
+{
+    name: "ColorPalette",
+    type: "multiSelect",
+    options : ["blue", "red", "yellow", "green"]
 },
 { 
     name : "Blog",
@@ -70,52 +75,43 @@ let arr = [
     name: "Password",
     placeholder: "Введите пароль",
     type: "passwordInput"
-}
-  // { 
-  //     name : "Blog",
-  //     placeholder: "Введите текст...",
-  //     type: "multiInput",
-  //     quantity: 3
-  // },
-  // { 
-  //     name : "Comments",
-  //     placeholder: "Введите текст...",
-  //     type: "multiInput",
-  //     quantity: 1
-  // },
-  // { //не готов
-  //     name : "input_multiple",
-  //     placeholder: "Введите текст...",
-  //     type: "text"
-  // },
-  // { //готов
-  //     name : "input_number",
-  //     placeholder: "Введите число...",
-  //     type: "numberInput"
-  // },
-  // { //готов
-  //     name : "input_pass",
-  //     placeholder: "Введите пароль...",
-  //     type: "passwordInput",
-  // },
-  // { //готов
-  //   name : "input_textarea",
-  //   placeholder: "Введите текст...",
-  //   type : "areaInput"
-  // },
-  // { //готов
-  //     name : "input_checkbox",
-  //     type : "checkInput"
-  // },
-  // { //готов
-  //     name : "input_checkbox",
-  //     type : "multiCheck",
-  //     quantity : 5
-  // },
-  // {
-  //     name : "input_multicheck",
-  //     type : "checkbox"
-  // }
+},
+  { 
+      name : "Blog",
+      placeholder: "Введите текст...",
+      type: "multiInput",
+      quantity: 3
+  },
+  { 
+      name : "Comments",
+      placeholder: "Введите текст...",
+      type: "multiInput",
+      quantity: 1
+  },
+  { 
+      name : "input_number",
+      placeholder: "Введите число...",
+      type: "numberInput"
+  },
+  { 
+      name : "input_pass",
+      placeholder: "Введите пароль...",
+      type: "passwordInput",
+  },
+  { 
+    name : "input_textarea",
+    placeholder: "Введите текст...",
+    type : "areaInput"
+  },
+  {
+      name : "input_checkbox",
+      type : "checkInput"
+  },
+  { 
+      name : "input_checkbox",
+      type : "multiCheck",
+      quantity : 5
+  }
 ]
 
 function App() {

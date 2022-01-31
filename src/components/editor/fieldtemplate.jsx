@@ -7,6 +7,7 @@ import { passwordInput } from './subcomponents/password'
 import { areaInput } from './subcomponents/textarea'
 import { radioInput } from './subcomponents/radio'
 import { selectInput } from './subcomponents/select'
+import { MultiSelect } from './subcomponents/multi_select'
 
 const keyHolder = {
     "textInput" : textInput,
@@ -17,10 +18,11 @@ const keyHolder = {
     "multiInput" : multiInput,
     "multiCheck" : multiCheck,
     "radioInput" : radioInput,
-    "selectInput" : selectInput
+    "selectInput" : selectInput,
+    "multiSelect" : MultiSelect
 }
 
-export const FieldTemplate = ({data, changeHandler, checkedHandler, multiInputHandler, multiCheckHandler}) => {
+export const FieldTemplate = ({data, changeHandler, checkedHandler, multiInputHandler, multiCheckHandler, multiSelectHandler}) => {
     for (const key in keyHolder) {
         if (key === data.type){
             const ComponentName = keyHolder[key]
@@ -30,6 +32,7 @@ export const FieldTemplate = ({data, changeHandler, checkedHandler, multiInputHa
                     checkedHandler={checkedHandler} 
                     multiInputHandler={multiInputHandler}
                     multiCheckHandler={multiCheckHandler}
+                    multiSelectHandler={multiSelectHandler}
                 />
             )
         }

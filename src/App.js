@@ -111,6 +111,7 @@ let arr = [
       name : "input_checkbox",
       type : "multiCheck",
       quantity : 5
+  }
 ]
 
 function App() {
